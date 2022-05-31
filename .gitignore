@@ -1,0 +1,8 @@
+/LogService/.vs
+/LogService/bin
+/LogService/LogService.CommonService/obj
+/LogService/LogService.Core/obj
+/LogService/LogService.Dto/obj
+/LogService/LogService.LogApi/obj
+/LogService/LogService.Test/obj
+/LogService/LogService.Tools/obj

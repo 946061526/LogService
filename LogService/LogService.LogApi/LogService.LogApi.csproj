@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+	  <GenerateDocumentationFile>True</GenerateDocumentationFile>
+	  <DocumentationFile>..\bin\$(Configuration)\LogApiSwaggerDoc.xml</DocumentationFile>
+	  <OutputPath>..\bin\$(Configuration)\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.0.20" />
+    <PackageReference Include="Npgsql" Version="4.1.11" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.1" />
+    <PackageReference Include="System.Data.SQLite.Core" Version="1.0.115.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LogService.Core\LogService.Core.csproj" />
+    <ProjectReference Include="..\LogService.Dto\LogService.Dto.csproj" />
+    <ProjectReference Include="..\LogService.Tools\LogService.Tools.csproj" />
+  </ItemGroup>
+
+
+</Project>
